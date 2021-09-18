@@ -95,7 +95,7 @@ export default function Forget_Password() {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Sign in
+                    Forget password
                 </Typography>
                 <form className={classes.form} onSubmit={handleResetPassword}>
                     <TextField
@@ -116,7 +116,7 @@ export default function Forget_Password() {
                     <Button
                         type="submit"
                         fullWidth
-                        variant="contained"
+                        variant="outlined"
                         color="primary"
                         className={classes.submit}
                     >

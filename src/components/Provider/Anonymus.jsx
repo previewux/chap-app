@@ -11,7 +11,7 @@ const Anonymus = ({ children }) => {
 
     useEffect(() => {
         const subscribe = auth.onAuthStateChanged(user => {
-            console.log(user);
+
             if (user) {
                 let detailscarryer = []
                 db.collection('users').get().then(snapshot => {
@@ -20,7 +20,6 @@ const Anonymus = ({ children }) => {
                     });
                     if (detailscarryer) {
                         const exist = detailscarryer.some(e => e === user.email)
-                        console.log(exist, 'exist');
                         if (exist) {
                             setTimeout(() => {
                                 setuserisok(true)
