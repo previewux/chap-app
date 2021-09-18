@@ -1,0 +1,116 @@
+$-bg-black: #242526;
+$-bg-black-ss: #404040;
+
+body {
+  background: $-bg-black;
+  /* background: #18191a; */
+}
+
+.do-dark {
+  background: #252627 !important;
+}
+
+.common_ {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.current_user {
+  flex-direction: row-reverse;
+}
+.opposite_user {
+  justify-content: flex-start;
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  box-shadow: 1px 0px 16px 0px #1f1e25eb;
+  border-radius: 0.5rem;
+}
+.message_sector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.read_massages {
+  max-height: 400px;
+  padding: 0 1rem;
+  padding: 1rem 1rem 0;
+}
+.setscroolbar_ {
+  overflow: hidden scroll;
+}
+.write_massages {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #242526;
+  padding: 0.8rem;
+  padding-top: 0.5rem;
+}
+.title__wrappper h4 {
+  color: white;
+  margin: 0;
+  background: #2f3032;
+  padding: 0.77rem 1rem;
+}
+.text_container {
+  background: $-bg-black-ss;
+  padding: 0.33rem 1rem 0.5rem;
+  border-radius: 0.88rem;
+  margin: 0;
+  color: white;
+  max-width: 220px;
+}
+
+.form__ {
+  width: 95%;
+  display: flex;
+  .input_fild {
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    background: #464646;
+    width: 100%;
+    color: white;
+    border-radius: 2rem;
+  }
+  .sent_btn {
+    border: none;
+    background: no-repeat;
+    cursor: pointer;
+  }
+
+  .sent_svg {
+    color: rgb(0, 132, 255);
+    vertical-align: middle;
+  }
+}
+
+.current_user:first-child {
+  .text_container {
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 0.2rem;
+  }
+}
+.current_user:last-child {
+  .text_container {
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 1.2rem;
+  }
+}
+.opposite_user:first-child {
+  .text_container {
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 0.2rem;
+  }
+}
+.opposite_user:last-child {
+  .text_container {
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 0.2rem;
+  }
+}
