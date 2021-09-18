@@ -23,13 +23,9 @@ const App = () => {
 
       <Switch>
         <PriveteRoute exact path='/' component={ChatApplication} />
-
         <PublicRoute exact path='/login/' component={Login} />
-
         <PublicRoute exact path='/user/signup/' component={SignUp} />
-
         <Route exact path='/user/forgetPassword/' component={ForgetPassword} />
-
       </Switch>
     </Router>
   )
